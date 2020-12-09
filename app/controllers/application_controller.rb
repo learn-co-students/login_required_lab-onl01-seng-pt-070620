@@ -10,9 +10,7 @@ class ApplicationController < ActionController::Base
   private
 
   def logged_in
-    if current_user
-      redirect_to secret_path
-    else
+    if !current_user
       redirect_to '/login'
     end
   end
