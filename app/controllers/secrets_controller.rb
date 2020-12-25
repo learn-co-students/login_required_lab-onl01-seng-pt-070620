@@ -4,11 +4,11 @@ class SecretsController < ApplicationController
     def show
     end
 
-    private
+    # private
 
-    def require_login
-       if !session.include? :name
-        redirect_to login_path
-       end
-    end
+    # def require_login
+    #    if !session.include? :name
+    #     redirect_to login_path
+    #    end
+    # end
 end
